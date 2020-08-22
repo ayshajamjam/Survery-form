@@ -1,0 +1,81 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400&family=Josefin+Sans:ital,wght@0,500;1,600&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="main-page">
+    <div class="intro">
+      <h1 id="title">About You Survey Form</h1>
+      <h4 id="description">Tell us about yourself!</h4>
+    </div>
+
+    <div id="box">
+      <form id="survey-form">
+
+        <div class="block">
+          <label for="name" class="head">Name</label><br>
+          <input type="text" id="name" class="textfont" name="name" placeholder="Enter your name" required><br>
+        </div>
+
+        <div class="block">
+          <label for="email" class="head">Email</label><br>
+          <input type="email" id="email" class="textfont" name="email" placeholder="Enter your email" required><br>
+        </div>
+
+        <div class="block">
+          <label for="age" class="head">Age (optional)</label><br>
+          <input type="number" id="number" class="textfont" name="age" placeholder="Age"><br>
+        </div>
+
+        <div class="block">
+          <label for="occ" class="head">What is your current occupation?</label><br>
+          <input list="occ" class="textfont" required>
+          <datalist id="occ">
+            <option value="student">
+            <option value="teacher">
+            <option value="developer">
+            <option value="professor">
+            <option value="other">
+          </datalist>
+        </div>
+
+        <div class="block">
+          <label for="meal" class="head">Which meal do you enjoy the most?</label><br>
+          <input type="radio" id="breakfast" name="meal" required>
+          <label for="breakfast">Breakfast</label>
+          <input type="radio" id="lunch" name="meal">
+          <label for="lunch">Lunch</label>
+          <input type="radio" id="dinner" name="meal">
+          <label for="dinner">Dinner</label>
+          <br>
+        </div>
+
+        <div class="block">
+          <label for="activities" class="head">What activities do you enjoy?</label><br>
+          <input type="checkbox" id="running" name="activities">
+          <label for="running">Running</label><br>
+          <input type="checkbox" id="painting" name="activities">
+          <label for="painting">Painting</label><br>
+          <input type="checkbox" id="baking" name="activities">
+          <label for="baking">Baking</label><br>
+          <input type="checkbox" id="writing" name="activities">
+          <label for="writing">Writing</label><br>
+          <input type="checkbox" id="coding" name="activities">
+          <label for="coding">Coding</label><br>
+        </div>
+
+        <div class="block">
+          <label for="comments" class="head">Would you like to add anything else?</label><br>
+          <textarea id="comments" class="textfont" name="comments" rows="8" cols="50"></textarea><br>
+        </div>
+
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+
+  </body>
+</html>
